@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Bienvenida</title>
+    <style>
+        /* Estilos adicionales para centrar el botón */
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            animation: pulse 1s infinite alternate; /* Animación */
+        }
+
+        /* Definición de la animación */
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Hola preciosa, estoy dudando y a la vez nervioso sobre cómo hacer esto.</h1>
+        <h1> Esto me pareció una buena opción. Si estás lista, dale clic al botón</h1> 
+        <button onclick="location.href='index.html'">Lista</button>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
